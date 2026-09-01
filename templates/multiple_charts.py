@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import bar_chart as bar
 import line_chart as line
-import bubble_chart as bubble
+import templates.bubble_chart as bubble
 
 def multiple_charts(axs, N=200, dt=0.01):
     bar.bar_chart(axs[0])
