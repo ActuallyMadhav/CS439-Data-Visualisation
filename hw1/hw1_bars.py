@@ -33,23 +33,26 @@ def task1(filename: str):
         
         # Relative fractions plot
         chart2.bar(x + offset, fractoins.loc[region], width, label=region, color=colors.get(region, 'gray'), edgecolor='black', linewidth=1)
-        
+
+    tick_positions = np.arange(len(intervals) + 1) - 0.5     
 #   number of models
-    chart1.set_xticks(x)
-    chart1.set_xticklabels(intervals)
+    chart1.set_xticks(tick_positions)
+    chart1.set_xticklabels(bins)
     chart1.set_xlabel('Efficiency (Wh/km)')
     chart1.set_ylabel('Number of EV Models')
     chart1.legend(title='Production Origin')
+    chart1.set_title('Count of EVs')
     
 #   proportion of models
-    chart2.set_xticks(x)
-    chart2.set_xticklabels(intervals)
+    chart2.set_xticks(tick_positions)
+    chart2.set_xticklabels(bins)
     chart2.set_xlabel('Efficiency (Wh/km)')
     chart2.set_ylabel('Prportion of EV Models')
     chart2.legend(title='Production Origin')
+    chart2.set_title('Relative Fraction')
     
     # Render both charts in a single window
-    plt.title('Efficiency of EVs produced between 2010 and 2024')
+    fig.suptitle('Efficiency of EVs Produced between 2010 and 2024', weight='bold')
     plt.tight_layout()
     plt.show()
 
