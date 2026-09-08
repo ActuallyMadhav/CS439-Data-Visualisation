@@ -60,6 +60,9 @@ def task1(filename: str):
 if __name__ == '__main__':
     # argparse
     parser = argparse.ArgumentParser(description='Grouped Bar Chart')
+
     parser.add_argument('-i', '--input', dest='filename', required=True, help='include path to data file')
+
     args = parser.parse_args()
+
     task1(args.filename)
