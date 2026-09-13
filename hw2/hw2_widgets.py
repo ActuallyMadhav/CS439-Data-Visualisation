@@ -1,0 +1,1 @@
+# Deliverable and API: hw2_widgets.py -i <dataset path> [-x X] [-y Y] [-s SIZE] [-c COLOR]
