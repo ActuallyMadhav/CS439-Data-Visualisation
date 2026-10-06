@@ -294,7 +294,6 @@ class HoverTooltip:
         for artist in self.artists:
             artist.set_visible(False)
 
-    # -- blitting ------------------------------------------------------------
     def _on_draw(self, event):
         self.background = self.canvas.copy_from_bbox(self.fig.bbox)
         for artist in self.artists:
