@@ -1,3 +1,4 @@
+#run command: python3 hw4_radial_layered.py -i numpy.json -maxdepth [maxdepth] (maxdepth is optional)
 import argparse
 import json
 

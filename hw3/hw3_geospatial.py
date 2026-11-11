@@ -1,4 +1,4 @@
-# Deliverable and API: hw3_geospatial.py -m <worldmap> -a <airports> -f <flights>
+# compiler command: hw3_geospatial.py -m <worldmap> -a <airports> -f <flights>
 import argparse
 import json
 

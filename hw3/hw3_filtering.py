@@ -1,4 +1,4 @@
-# Deliverable and API: hw3_filtering.py -m <worldmap> -a <airports> -f <flights>
+# compiler command: hw3_filtering.py -m <worldmap> -a <airports> -f <flights>
 import sys
 import argparse
 import json

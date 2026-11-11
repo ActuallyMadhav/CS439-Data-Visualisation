@@ -1,3 +1,4 @@
+# run command: python3 hw4_layered.py -i numpy.json -maxdepth [maxdepth] (max depth is optional)
 import argparse
 import json
 

@@ -1,3 +1,4 @@
+# run command: python3 hw4_nodelink.py -i numpy.json
 import argparse
 import json
 
@@ -7,8 +8,8 @@ from matplotlib.collections import LineCollection
 # tree.py uses Tree before defining it
 _b = __builtins__ if isinstance(__builtins__, dict) else vars(__builtins__)
 _b['Tree'] = object
-from tree import Tree  # noqa: E402
-from draw import buchheim  # noqa: E402
+from tree import Tree 
+from draw import buchheim  
 del _b['Tree']
 
 LEVEL_SEP = 4.0
